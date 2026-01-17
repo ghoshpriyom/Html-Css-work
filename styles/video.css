@@ -1,0 +1,162 @@
+p{
+    font-family: Roboto, Arial;
+    font-size:14px;
+    margin-top:0px;
+    margin-bottom:0px;
+
+}
+
+
+.thumbnail{
+    width:100%;
+    cursor: pointer;
+}
+
+.channel{
+    width:40px;
+    border-radius:19px;
+    cursor: pointer;
+}
+
+.channel-logo{
+    position: relative;
+    display: inline-block;
+}
+
+.video-info-grid{
+    display:grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.page-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:15px;
+    row-gap: 40px;
+}
+
+
+@media (max-width:1050px){
+    .page-grid{
+        grid-template-columns: 1fr 1fr ;
+
+    }
+
+}
+@media (min-width:1051px) and (max-width:1349px){
+    .page-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1350px){
+    .page-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+.thumbnail-row{
+    margin-bottom: 10px;
+    position:relative;
+}
+.title{
+    font-weight:500;
+    line-height:20px;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+.author{
+    font-size:11px;
+    color:rgb(60, 60, 60);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.stats{
+    font-size:11px;
+    color:rgb(60, 60, 60);
+}
+.title,.author,.stats{
+    align-items: center;
+}
+
+
+.video-length{
+    position: absolute;
+    background-color: black;
+    color:white;
+    right:5px;
+    bottom:10px;
+    font-family: Roboto, Arial;
+    font-size:12px;
+    padding: 4px 4px 4px 4px;
+    border-radius:3px;
+    font-weight: 500;
+}
+
+
+.video-title-link,.video-author-link{
+    text-decoration: none;
+    color:black;
+}
+
+
+.profile-picture-container {
+  position: relative;
+  display: inline-block;
+}
+
+.channel-tooltip {
+  background-color: white;
+  width: 200px;
+  padding: 12px 12px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  position: absolute;
+  top: 55px;
+  z-index: 3;
+
+  opacity: 0;
+  pointer-events: none;
+
+  display: flex;
+  align-items: center;
+  transition: opacity 0.15s;
+}
+
+.channel-logo:hover .channel-tooltip {
+  opacity: 1;
+}
+
+.channel-tooltip-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 8px;
+}
+
+.channel-tooltip-name {
+  font-family: Roboto, Arial;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.channel-tooltip-stats {
+  font-family: Roboto, Arial;
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+}
+
+@media (min-width:1000px){
+    .title{
+        font-size:16px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width:1000px){
+    .author,.stats{
+        font-size:14px;
+    }
+}
