@@ -1,0 +1,82 @@
+.side-bar{
+    background-color:white;
+    position: fixed;
+    top:60px;
+    bottom:0px;
+    left:0px;
+    width:74px;
+    z-index: 3;
+    
+}
+.grid{
+    display:grid;
+    background-color: white;
+    grid-template-rows: 75px 75px 75px 75px 75px 75px;
+    align-items: center;
+    
+}
+
+.home,.explore,.subscriptions,.originals,.youtube-music,.library{
+    width:25px;
+    margin-left:20px;
+}
+
+.label{
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    margin-left:17px;
+    font-weight: 400;
+}
+
+.labels{
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.hover:hover{
+    background-color: rgb(234, 233, 233);
+    cursor: pointer;
+}
+
+@media (min-width:1200.1px){
+    .side-bar{
+        position: fixed;
+        left:0px;
+        bottom:0px;
+        top:60px;
+        width:200px;
+        z-index:2;
+    }
+
+    .hover,.label,.labels{
+        display:flex;
+        align-items: center;
+        cursor:pointer;
+    }
+
+    .hover img {
+        height: 24px;
+        margin-right: 24px;
+    }
+
+    .hover div{
+        font-family: roboto, arial;
+        font-size:14px;
+        
+    }
+
+}
+
+@media (min-width:1200.1px){
+    body{
+        margin-left:130px;
+    }
+}
+
+@media (min-width:1200.1px){
+    .grid{
+        
+        
+    }
+}
